@@ -1,0 +1,167 @@
+header { 
+	border-radius: 20px; 
+	background-image: url("Images/Banner.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 22%;
+	min-width: 500px;
+}
+
+body{
+	background-color: black;
+	background-image: url("Images/mainbg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	color: #ffaa00;
+	font-size: 1.2em;
+	margin: 20 40 0 40;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav{
+	text-align: center;
+	padding: 10px 0;
+	min-width: 500px;
+}
+
+nav ul {
+	background: rgba(00, 64, 00, 0.7);
+}
+
+nav ul li{
+	display: inline-block;
+	color: rgba(00, 64, 00, 0.7);
+	position: relative;
+}
+
+nav ul li a{
+
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+	color: #FFFF55;
+	font-size: 18px;
+}
+
+nav ul li :hover{
+	background-color: yellow;
+}
+
+nav ul li :active{
+	background-color: yellow;
+}
+
+#main {
+	min-height: 50%;
+	background-color: rgba(00, 20, 00, 0.3);
+	border: solid #004000 5px;
+	border-radius: 10px;
+	padding: 1%;
+	margin-bottom: 2%;
+}
+
+footer {
+	width: 100%;
+	border-radius: 25px;
+	background-color: #003300;
+	color: white;
+	position: relative;
+	display: inline-block;
+}
+
+#footerLeft {
+	width: 50%;
+	padding: 12 0 12 25;
+	float: left;
+}
+
+#footerRight{
+	list-style: circle;
+}
+
+#footerRight li{
+	display: inline-block;
+	float: right;
+	padding: 12 25 12 0;
+}
+
+#footerRight>li:before{
+    content: "\2022";
+    padding-right: 0.75em;
+	font-size: 1.25em;
+    position: relative;
+	color: white;
+}
+
+#footerRight li a{
+	color: white;
+	text-decoration: none;
+}
+
+nav ul li ul{
+	max-height:0em;
+    overflow:hidden;
+    position: absolute;
+	background-color: rgba(00, 64, 00, 0.9);
+    transition:max-height 0.8s ease;
+}
+
+nav ul li ul li{
+	display: block;
+    font-size: 12px;
+    border-bottom: none;
+    width: 145px;
+    color: #ffffff;
+    padding-left: 0px;
+    height: 34px;
+    line-height: normal;
+    position: relative;
+    left: -20px;
+	padding-bottom: 10px;
+}
+
+nav ul li ul li a{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    height: auto;
+    padding: 10px 5px;
+    font-size: 14px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+nav ul li:hover ul{
+	max-height: 600px;
+}
+
+
+
+nav ul li :hover{
+	background-color: green;
+}
+
+
+
+nav ul li :active{
+	background-color: black;
+}
+
+#Sil {
+	float: left;
+	margin: 2% 0% 5% 15%;
+}
+
+#Prot {
+	float: right;
+	margin: 2% 15% 5% 0%;
+}
+
+#memberPhoto {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
