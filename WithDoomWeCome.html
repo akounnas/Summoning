@@ -1,0 +1,148 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css"/>
+<script>
+	window.onload = function() {
+	var modal = document.getElementById('myModal');
+
+		var img = document.getElementById("WDWCart");
+		var modalImg = document.getElementById('img08');
+		var captionText = document.getElementById('caption8');
+		img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function() { 
+			modal.style.display = "none";
+		}
+
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	}
+</script>
+</head>
+
+<body>
+
+<header></header>
+
+<nav>
+	<ul>
+		<li><a href = "main.html">Home</a><li>
+		<li><a href = "bio.html">Biography</a></li>
+		<li><a href = "members.html">Members</a>
+			<ul>
+				<li><a href = "Silenius.html">Silenius</a></li>
+				<li><a href = "Protector.html">Protector</a></li>
+			</ul>
+		</li>
+		<li><a href = "disco.html">Discography</a>
+			<ul>
+				<li><a href = "Lugburz.html">Lugburz</a></li>
+				<li><a href = "MinasMorgul.html">Minas Morgul</a></li>
+				<li><a href = "DolGuldur.html">Dol Guldur</a></li>
+				<li><a href = "Stronghold.html">Stronghold</a></li>
+				<li><a href = "LetMortalHeroesSingYourFame.html">Let Mortal Heroes Sing Your Fame</a></li>
+				<li><a href = "OathBound.html">Oath Bound</a></li>
+				<li><a href = "OldMorningsDawn.html">Old Morning's Dawn</a></li>
+				<li><a href = "WithDoomWeCome.html">With Doom We Come</a></li>
+			</ul>
+		</li>
+		<li><a href = "tour.html">Tour Dates</a></li>
+	</ul>	
+</nav>
+
+<div id = "main">
+		<h1><center>With Doom We Come (2018)<center></h1>
+		<div class = "albumart">
+		<img src = "images/withdoomwecome.jpg" id = "WDWCart" class = "albumimg" width = 300 height = 300 alt = "With Doom We Come album art"></img>
+		<p>(click to enlarge)<p>
+		</div>
+	
+	<div class = "tracklist">	
+		<table>
+			<tr>
+				<th>No</th><th>Title</th><th>Length</th>
+			</tr>
+			<tr>
+				<td>1</td><td>"Soul Wandering" (Instrumental)</td><td>2:33</td>
+			</tr>
+			<tr>
+				<td>2</td><td>"Lugburz"</td><td>7:14</td>
+			</tr>
+			<tr>
+				<td>3</td><td>"The Passing of the Grey Company"</td><td>9:16</td>
+			</tr>
+			<tr>
+				<td>4</td><td>"Morthond"</td><td>6:44</td>
+			</tr>
+			<tr>
+				<td>5</td><td>"Marching Homewards"</td><td>8:11</td>
+			</tr>
+			<tr>
+				<td>6</td><td>"Orthanc" (Instrumental)</td><td>1:40</td>
+			</tr>
+			<tr>
+				<td>7</td><td>"Ungolianth"</td><td>6:36</td>
+			</tr>
+			<tr>
+				<td>8</td><td>"Dagor Bragollach"</td><td>5:06</td>
+			</tr>
+			<tr>
+				<td>9</td><td>"Through the Forest of Dol Guldur"</td><td>4:46</td>
+			</tr>
+			<tr>
+				<td>10</td><td>"The Legend of the Master-Ring"</td><td>5:28</td>
+			</tr>
+			<tr>
+				<td>11</td><td>"Dor Daedeloth"</td><td>10:16</td>
+			</tr>
+			<tr>
+				<td colspan = "2" align = "right">Total Length</td><td>67:52</td>
+			</tr>			
+		</table>
+	</div>
+	
+	<div class = "content">
+		<h2>General information</h2>
+		<p>Minas Morgul is the second full-length album by the Austrian black metal band Summoning. The band and many of their fans consider this album to be their debut album as it developed the "Summoning-sound" and brought the band to a larger audience.</p>
+
+		<h2>Illustration</h2>
+		<p>The front illustration of the album was taken from the 1991 video game Ishar: Legend of the Fortress.</p>
+		
+		<h2>Credits</h2>
+		<ul>
+			<li>Protector – vocals, guitar, keyboards</li>
+			<li>Silenius – bass, keyboards, vocals</li>
+			
+		</ul>
+	</div>	
+		
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img08">
+		<div id = "caption8"></div>
+	</div>
+</div>
+
+<footer>
+	<p id = "footerLeft">Copyright</p>
+	<ul id = "footerRight">
+			<li><a href = "about: blank">Contact Us</a></li>
+			<li><a href = "about: blank">Sitemap</a></li>
+			<li><a href = "about: blank">More Info</a></li>
+			<li><a href = "about: blank">About</a></li>
+	</ul>		
+</footer>
+
+</body>
+
+</html>
