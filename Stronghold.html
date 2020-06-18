@@ -2,6 +2,7 @@
 
 <head>
 <link rel="stylesheet" href="style.css"/>
+<title>Summoning - Stronghold</title>
 <script>
 	window.onload = function() {
 	var modal = document.getElementById('myModal');
@@ -68,12 +69,14 @@
 	</div>
 	
 	<div class = "tracklist" id = "SHtlist">
+
+		<a href="JavaScript:newPopup('\SH.html');" style = "text-decoration: none;">
 		<table>
 			<tr>
 				<th>No</th><th>Title</th><th>Length</th>
 			</tr>
 			<tr>
-				<td>1</td><td>"Rhûn" (Instrumental)</td><td>3:25</td>
+				<td>1</td><td>"Rhun" (Instrumental)</td><td>3:25</td>
 			</tr>
 			<tr>
 				<td>2</td><td>"Long Lost to Where No Pathway Goes"</td><td>7:23</td>
@@ -103,7 +106,16 @@
 				<td colspan = "2" align = "right">Total Length</td><td>64:21</td>
 			</tr>			
 		</table>
+	</a>
 	</div>
+	
+	<script type="text/javascript">
+		// Popup window code
+		function newPopup(url) {
+		popupWindow = window.open(
+		url,'popUpWindow','height=600,width=500,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+		}
+	</script>
 	
 	<div class = "content">
 	<h2>General information</h2>
@@ -140,13 +152,13 @@
 </div>
 
 <footer>
-	<p id = "footerLeft">Copyright</p>
+	<p id = "footerLeft">&#9400 Andreas Kounnas</p>
 	<ul id = "footerRight">
-			<li><a href = "about: blank">Contact Us</a></li>
-			<li><a href = "about: blank">Sitemap</a></li>
-			<li><a href = "about: blank">More Info</a></li>
-			<li><a href = "about: blank">About</a></li>
-	</ul>		
+			<li><a href = "contact.html">Contact Us</a></li>
+			<li><a href = "sitemap.html">Sitemap</a></li>
+			<li><a href = "info.html">More Info</a></li>
+			<li><a href = "about.html">About</a></li>
+	</ul>			
 </footer>
 
 </body>

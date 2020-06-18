@@ -2,7 +2,7 @@
 
 <head>
 <link rel="stylesheet" href="style.css"/>
-<title>Protector info</title>
+<title>Summoning Fanpage</title>
 </head>
 
 <body>
@@ -11,7 +11,7 @@
 
 <nav>
 	<ul>
-		<li><a href = "main.html">Home</a><li>
+		<li><a href = "main.html">Home</a></li>
 		<li><a href = "bio.html">Biography</a></li>
 		<li><a href = "members.html">Members</a>
 			<ul>
@@ -35,11 +35,37 @@
 	</ul>	
 </nav>
 
+
 <div id = "main">
-	<img id = "memberPhoto" src = "Images/ProtectorBio.jpg" height = "440" width = "280"></img>
-	<h1>Protector: Guitars, Vocals, Keyboards</h1>
-	<p>Richard Lederer (born 10 June 1971) is an Austrian metal musician most notable for being a member in the bands Summoning, Die Verbannten Kinder Evas, and Ice Ages. He also does the artwork for some of the albums that he plays music in.</p>
-</div>
+	<div id = "form">
+		<form name="myForm" onsubmit="return validateForm();" method="post">
+			<fieldset>
+				<legend>Contact Us</legend>
+					First Name <input type = "text" length = "10" maxlength = "30" style = "margin-left: 15;"><br>
+					Last Name <input type = "text" length = "10" maxlength = "30" style = "margin-left: 16;"><br>
+					E-mail<input type = "email" name = "mail" length = "15" maxlength = "40" style = "margin-left: 55;"><br><br>
+					Comments<br><textarea rows = "4" cols = "40"  name="comments" id="comments" style="font-family:sans-serif;font-size:0.8em;"></textarea><br><br>
+					<button type = "submit" style = "margin: 10;">SUBMIT</button><button type = "clear" style = "margin: 10;">CLEAR</button>
+			</fieldset>
+		</form>
+	</div>
+</div>	
+
+<script>
+	function validateForm() {
+    var x = document.forms["myForm"]["mail"].value;
+    if (x == "") {
+        alert("Invalid e-mail address");
+        return false;
+    }
+	else {
+		alert("Submition success, Thank you for your input!");
+		return true;
+	}
+}
+</script>
+
+
 
 <footer>
 	<p id = "footerLeft">&#9400 Andreas Kounnas</p>

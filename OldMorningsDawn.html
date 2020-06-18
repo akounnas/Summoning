@@ -2,6 +2,7 @@
 
 <head>
 <link rel="stylesheet" href="style.css"/>
+<title>Old Mornings Dawn</title>
 <script>
 window.onload = function() {
 	var modal = document.getElementById('myModal');
@@ -68,6 +69,7 @@ window.onload = function() {
 	</div>
 	
 	<div class = "tracklist">	
+		<a href="JavaScript:newPopup('\OMD.html');" style = "text-decoration: none;">
 		<table>
 			<tr>
 				<th>No</th><th>Title</th><th>Length</th>
@@ -104,9 +106,19 @@ window.onload = function() {
 			</tr>
 			<tr>
 				<td colspan = "2" align = "right">Total Length</td><td>75:15</td>
-			</tr>			
+			</tr>	
 		</table>
+		</a>
 	</div>
+	
+	<script type="text/javascript">
+		// Popup window code
+		function newPopup(url) {
+		popupWindow = window.open(
+		url,'popUpWindow','height=600,width=500,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+		}
+	</script>
+	
 	<div class = "content">
 		<h2>General information</h2>
 		<p>Old Mornings Dawn is the seventh full-length album by the Austrian atmospheric black metal band Summoning. The album was released on June 5, 2013 through Napalm Records. The cover art is based on George Hetzel's painting, Rocky Gorge. Silenius commented on the album's title: "Old Mornings Dawn is no concept album, but this time we mostly experienced the stories and legends of Eärendil the mariner: half man half eldar, ancestor of the kings of Númenor, with the Silmaril of his forehead he became an immortal star. 4 songs are dealing with this topic. The lyrics of another two songs come from the poems "City of Present Sorrow" and "Town of Dreams", two very old poems by J. R. R. Tolkien written at a time when the first world war was raging. The rest of the lyrics came from unknown writers or are written by myself and as ever are closely woven to the Tolkien universe".</p>
@@ -140,13 +152,13 @@ window.onload = function() {
 </div>
 
 <footer>
-	<p id = "footerLeft">Copyright</p>
+	<p id = "footerLeft">&#9400 Andreas Kounnas</p>
 	<ul id = "footerRight">
-			<li><a href = "about: blank">Contact Us</a></li>
-			<li><a href = "about: blank">Sitemap</a></li>
-			<li><a href = "about: blank">More Info</a></li>
-			<li><a href = "about: blank">About</a></li>
-	</ul>		
+			<li><a href = "contact.html">Contact Us</a></li>
+			<li><a href = "sitemap.html">Sitemap</a></li>
+			<li><a href = "info.html">More Info</a></li>
+			<li><a href = "about.html">About</a></li>
+	</ul>			
 </footer>
 
 </body>
